@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "162686980224",
+    "project_id": "expiry-date-check-app",
+    "storage_bucket": "expiry-date-check-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162686980224:android:4d0ed2a1998f8a19f15665",
+        "android_client_info": {
+          "package_name": "com.example.expirydatecheckapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEvj3KfzgcS7qEUxj5WmhbjyTaR5S36Ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

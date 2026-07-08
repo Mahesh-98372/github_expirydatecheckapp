@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">expiry date check app</string>
+    <string name="msg_cancelled">Cancelled</string>
+    <string name="product_name_format">Product %1$s</string>
+    <string name="dialog_select_expiry_title">Select Expiry for %1$s</string>
+    <string name="dialog_select_location_title">Select Location for %1$s</string>
+    <string name="msg_fill_all_fields">Please fill all fields</string>
+    <string name="msg_item_saved">Item Saved Successfully!</string>
+    <string name="msg_error_saving">Error saving item</string>
+    <string name="scan_prompt">Scan a barcode to add product</string>
+    <string name="quick_scan_prompt">Quick Scan to Add Product</string>
+    <string name="msg_searching_online">Searching product details online...</string>
+    <string name="msg_found_product">Found: %1$s</string>
+    <string name="msg_using_original_expiry">Using original expiry: %1$s</string>
+    <string name="msg_auto_added">Auto-added: %1$s</string>
+    <string name="msg_new_product_auto_saved">New product auto-saved with default info</string>
+    <string name="msg_product_recognized">Product recognized and auto-saved!</string>
+    <string name="msg_new_product_details">New product! Please enter details and expiry date.</string>
+    <string name="exp_date_format">Exp: %1$s</string>
+    <string name="status_expired">Expired</string>
+    <string name="days_left_format">%1$d Days Left</string>
+    <string name="date_error">Date Error</string>
+
+    <string-array name="categories_array">
+        <item>Dairy</item>
+        <item>Pharma</item>
+        <item>Pantry</item>
+        <item>Meat</item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="locations_array">
+        <item>Fridge</item>
+        <item>Kitchen Shelf</item>
+        <item>Medicine Box</item>
+        <item>Freezer</item>
+        <item>Pantry Room</item>
+    </string-array>
+
+    <string-array name="expiry_options">
+        <item>7 Days</item>
+        <item>30 Days</item>
+        <item>365 Days</item>
+    </string-array>
+
+    <string-array name="main_locations_array">
+        <item>Kitchen</item>
+        <item>Fridge</item>
+        <item>Pantry</item>
+        <item>Medicine Box</item>
+    </string-array>
+</resources>

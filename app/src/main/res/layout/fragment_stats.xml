@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Analytics"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Waste Overview -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WASTE OVERVIEW"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_grey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="16dp">
+
+                        <!-- Placeholder for Pie Chart -->
+                        <View
+                            android:id="@+id/pieChartPlaceholder"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/bg_circle_blue" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/pieChartPlaceholder"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="16dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <View android:layout_width="10dp" android:layout_height="10dp" android:background="@color/status_safe" android:layout_marginEnd="8dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Consumed" android:textSize="12sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <View android:layout_width="10dp" android:layout_height="10dp" android:background="@color/status_expired" android:layout_marginEnd="8dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expired" android:textSize="12sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Category Distribution -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CATEGORY DISTRIBUTION"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_grey" />
+
+                    <!-- Placeholder for Bar Chart -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:gravity="bottom|center_horizontal" android:orientation="vertical">
+                            <View android:layout_width="30dp" android:layout_height="80dp" android:background="@color/colorPrimary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dairy" android:textSize="10sp" android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:gravity="bottom|center_horizontal" android:orientation="vertical">
+                            <View android:layout_width="30dp" android:layout_height="120dp" android:background="@color/colorPrimary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pharma" android:textSize="10sp" android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:gravity="bottom|center_horizontal" android:orientation="vertical">
+                            <View android:layout_width="30dp" android:layout_height="60dp" android:background="@color/colorPrimary"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pantry" android:textSize="10sp" android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Pantry Health Score -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:strokeWidth="0dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PANTRY HEALTH SCORE"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_grey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="8dp">
+
+                        <!-- Simple Semi-circle progress placeholder -->
+                        <View
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_status_card" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="85%"
+                                android:textSize="32sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Good"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
